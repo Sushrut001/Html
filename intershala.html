@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Left Navigation Bar</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="sidebar">
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <div id="about" class="page">
+            <h1>About Us</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et mauris quis purus consectetur euismod.
+                Duis suscipit magna sapien, ut euismod odio malesuada in. Maecenas ut lectus diam. Donec sed nulla
+                vestibulum, iaculis nibh id, imperdiet nibh. </p>
+        </div>
+        <div id="contact" class="page">
+            <h1>Contact Us</h1>
+            <p>Phone: 555-555-5555</p>
+            <p>Email: info@example.com</p>
+            <p>Address: 123 Main Street, Anytown, USA</p>
+        </div>
+    </div>
+</body>
+
+</html>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        color: white;
+    }
+
+    .sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 200px;
+        height: 100%;
+        background-color: #000000;
+        color: white;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .sidebar ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        color: white;
+    }
+
+    .sidebar li {
+        margin-bottom: 20px;
+    }
+
+    .sidebar a {
+        text-decoration: none;
+        color: #4c0505;
+    }
+
+    .sidebar a:hover {
+        color: #ffffff;
+    }
+
+    .content {
+        margin-left: 200px;
+        padding: 20px;
+    }
+
+    .page {
+        display: none;
+    }
+
+    .page.active {
+        display: block;
+    }
+</style>
